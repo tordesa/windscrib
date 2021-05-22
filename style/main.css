@@ -3,6 +3,7 @@ html {
   padding: 0;
   margin: 0;
   height: 100%;
+  background-color: rgb(241, 231, 217);
 }
 
 .main {
@@ -24,7 +25,7 @@ html {
 }
 
 .weather-desc{
-  color: rgba(0, 0, 0, 0.461);
+  color: rgba(34, 4, 4, 0.461);
   font-size: 1.2rem;
   font-weight: bold;
   width: 100%;
@@ -35,14 +36,14 @@ html {
 }
 
 .weather-temp{
-font-weight: bold;
+font-weight: 400;
 font-size: 5rem;
 text-align: center;
 
 }
 
 .weather-temp sup {
-  color: #ffae03;
+  color: #8be0b0;
   font-size: 1.5rem;
 }
 
@@ -51,6 +52,13 @@ ul{
   line-height: 30px;
   font-weight: bold;
   font-size: 1.2rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+ul li {
+  color: #f1b5e2;
+  display: inline-block;
+  margin: 20px;
 }
 
 
@@ -67,5 +75,6 @@ ul{
 
 .header h1{
     font-weight: normal;
+    color: #f1b5e2;
 }
 

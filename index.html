@@ -11,13 +11,20 @@
 </head>
 
 <body>
-      <!-- Header -->
-      <!-- <header class="header">
+    <!-- Header -->
+    <!-- <header class="header">
         <img src="images/logo.png" width="100" alt="logo">
         <h1>WindScrib</h1>
     </header> -->
 
     <div class="main">
+
+        <header>
+            <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city ...">
+        </header>
+        <div class="search">
+            <button type="submit" class="search-btn">search</button>
+        </div>
 
         <p id="location" class="location"> Lagos, NG </p>
 
@@ -28,13 +35,28 @@
         <h1 class="weather-temp" id="weather-temp">0<sup>°C</sup>
         </h1>
 
-        <ul>
+        <!-- <ul>
             <li id="lat">Latitude: </li>
             <li id="lon">Longitude: </li>
             <li id="humidity">Humidity: </li>
             <li id="pressure">Pressure: </li>
             <li id="speed">Speed: </li>
-        </ul>
+            <li id="status">Status:</li>
+            <li id="temperature">Temperature:</li>
+        </ul> -->
+
+
+        <div class="location">
+            <div class="city">City:</div>
+            <div class="latitude">Latitude:</div>
+            <div class="longitude">Longitude:</div>
+            <div class="humidity">Humility:</div>
+            <div class="pressure">Pressure:</div>
+            <div class="speed">Speed:</div>
+            <div class="status">Status:</div>
+            <div class="temperature">Temperature:</div>
+        </div>
+
 
     </div>
 

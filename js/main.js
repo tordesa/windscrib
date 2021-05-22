@@ -179,7 +179,7 @@ function updateSearchReport(data) {
 
   // document.querySelector(".temperature").innerHTML += temp + " <sup>°C</sup>";
   getEle("weather-desc").innerHTML = description;
-  // getEle("location").innerHTML = location;
+  getEle("weather-temp").innerHTML = temp;
   getEle("lat").innerHTML = `Latitude: ${lat}<sup>°</sup>`;
   getEle("lon").innerHTML = `Longitude:  ${lon}<sup>°</sup>`;
   getEle("humidity").innerHTML = `Humidity ${humidity} g.m<sup>-3</sup>`;

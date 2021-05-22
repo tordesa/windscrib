@@ -12,7 +12,13 @@ searchbtn.addEventListener("click", setQuery);
 
 function setQuery(e) {
   e.preventDefault();
-  getResults(searchbox.value)
+  if (searchbox.value == " " || searchbox.value === "") {
+    alert("field shouldn't be empty")
+    return null;
+  } else {
+    getResults(searchbox.value)
+  }
+
   console.log(searchbox.value);
 }
 
@@ -27,7 +33,7 @@ async function getResults(query) {
   const weatherData = await weatherResponse.json();
 
   console.log(weatherData)
-  displayResults(weatherData)
+  // displayResults(weatherData)
   updateSearchReport(weatherData);
 }
 
@@ -171,7 +177,7 @@ function updateSearchReport(data) {
 
 
 
-  document.querySelector(".temperature").innerHTML += temp + " <sup>°C</sup>";
+  // document.querySelector(".temperature").innerHTML += temp + " <sup>°C</sup>";
   getEle("weather-desc").innerHTML = description;
   // getEle("location").innerHTML = location;
   getEle("lat").innerHTML = `Latitude: ${lat}<sup>°</sup>`;
